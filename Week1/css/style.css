@@ -1,15 +1,5 @@
-body,html {
-	margin:0;
-	height:100%;
-	width:100%;
-}
-
-#map {
-	height: 100%;
-}
-
 body {
-    display: grid;
+    /* display: grid; */
 	grid-template-rows: 80px 1fr;
 	grid-template-columns: 250px 1fr;
 	grid-template-areas: 
@@ -20,7 +10,7 @@ body {
 .header {
 	grid-area: header;
 	padding:10px;
-    background-color: #333;
+    background-color: blue;
 }
 .sidebar {
 	grid-area: sidebar;
@@ -30,3 +20,15 @@ body {
 .content {
 	grid-area: content;
 }
+
+.intro {
+    font-family: Garamond, serif;
+    color: blue;
+  }
+.pic {
+    border-radius: 50%;
+	width: 500px; /* width of container */
+    height: 500px; /* height of container */
+    object-fit: cover;
+	float: right;
+  }
