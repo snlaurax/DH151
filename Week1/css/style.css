@@ -5,12 +5,16 @@ body {
 	grid-template-areas: 
 	"header header"
 	"sidebar content";
+	background-image: url('cherry.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .header {
 	grid-area: header;
 	padding:10px;
-    background-color: blue;
+    background-color: white;
 }
 .sidebar {
 	grid-area: sidebar;
@@ -23,7 +27,12 @@ body {
 
 .intro {
     font-family: Garamond, serif;
-    color: blue;
+	font-size: 60px;
+    color: white;
+	background-color: #B3AA6C;
+	padding-left: 20px;
+	margin-left: -20px;
+	overflow: hidden;
   }
 .pic {
     border-radius: 50%;
@@ -32,3 +41,22 @@ body {
     object-fit: cover;
 	float: right;
   }
+
+  .column {
+	float: left;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left {
+	width: 55%;
+	padding-top: 2%;
+  }
+  
+  .right {
+	width: 35%;
+	padding-left: 5%;
+	padding-top: 7%;
+  }
+
+ 
