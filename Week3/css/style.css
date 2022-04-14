@@ -42,7 +42,7 @@ body {
     text-align:center;
     overflow-x: auto;
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     position: relative;
@@ -52,6 +52,7 @@ body {
 
 .sidebar {
 	grid-area: sidebar;
+    margin:10px;
 	padding:10px;
 	background-color: #ddbea9;
     overflow: auto;
@@ -167,4 +168,15 @@ body {
     display:inline-block;
     float: none;
     font-family: Lato;
+}
+
+
+:root {
+    --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+    .map-tiles {
+        filter:var(--map-tiles-filter, none);
+	}
 }
